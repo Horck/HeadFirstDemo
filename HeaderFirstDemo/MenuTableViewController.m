@@ -43,6 +43,10 @@
     {
         desStr = @"装饰者模式动态地将责任附加到对象上。 若要扩展功能，装饰者提供了比继承更有弹性 的替代方案。";
         titleStr = @"装饰者模式";
+    }else if ([identifierSting isEqualToString:@"jump4"])
+    {
+        desStr = @"定义了一个创建对象的接口，单由于子类绝顶要实例化的类是哪一个。工厂方法让类把实例化推迟到子类";
+        titleStr = @"工厂模式";
     }
     toVC.desStr = desStr;
     toVC.navigationItem.title = titleStr;

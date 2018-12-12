@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "YellowDuck.h"
 #import "RedDuck.h"
+#import "DuckCreater.h"
 #import "Beverages.h"
 #import "PicShowController.h"
 @interface ViewController ()
@@ -41,6 +42,9 @@
     }else if ([title isEqualToString:@"装饰者模式"])
     {
         [self jump3Action];
+    }else if ([title isEqualToString:@"工厂模式"])
+    {
+        [self jump4Action];
     }
 }
 
@@ -103,6 +107,15 @@
     NSLog(@"价格是%@ =$%.2f",de ,de.cost);
     
 
+}
+
+
+#pragma mark -共产模式
+-(void)jump4Action{
+    DuckCreater *creater = [[DuckCreater alloc] init];
+    
+    [creater creatDuckWithType:DuckTypeYellow];
+    [creater creatDuckWithType:DuckTypeRed];
 }
 
 - (YellowDuck *)yellowDuck
