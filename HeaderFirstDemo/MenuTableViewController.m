@@ -39,6 +39,10 @@
     {
         desStr = @"观察者模式定义了对象之间的一对多依赖，这 样一来，当一个对象改变状态时，它的所有依赖者都 会收到通知并自动更新。";
         titleStr = @"观察者模式";
+    }else if ([identifierSting isEqualToString:@"jump3"])
+    {
+        desStr = @"装饰者模式动态地将责任附加到对象上。 若要扩展功能，装饰者提供了比继承更有弹性 的替代方案。";
+        titleStr = @"装饰者模式";
     }
     toVC.desStr = desStr;
     toVC.navigationItem.title = titleStr;

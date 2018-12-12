@@ -12,6 +12,11 @@
 		7620688321BF952A00C35EEE /* RedDuck.m in Sources */ = {isa = PBXBuildFile; fileRef = 7620688221BF952A00C35EEE /* RedDuck.m */; };
 		7620688621BFA5D000C35EEE /* FlyBehaviors.m in Sources */ = {isa = PBXBuildFile; fileRef = 7620688521BFA5D000C35EEE /* FlyBehaviors.m */; };
 		7620688921BFA5E400C35EEE /* QuackBehaviors.m in Sources */ = {isa = PBXBuildFile; fileRef = 7620688821BFA5E400C35EEE /* QuackBehaviors.m */; };
+		7623A1FA21C0B397003B1715 /* Beverages.m in Sources */ = {isa = PBXBuildFile; fileRef = 7623A1F921C0B397003B1715 /* Beverages.m */; };
+		7623A1FF21C0E643003B1715 /* 策略模式.png in Resources */ = {isa = PBXBuildFile; fileRef = 7623A1FC21C0E643003B1715 /* 策略模式.png */; };
+		7623A20021C0E643003B1715 /* 装饰者模式.png in Resources */ = {isa = PBXBuildFile; fileRef = 7623A1FD21C0E643003B1715 /* 装饰者模式.png */; };
+		7623A20121C0E643003B1715 /* 观察者模式.png in Resources */ = {isa = PBXBuildFile; fileRef = 7623A1FE21C0E643003B1715 /* 观察者模式.png */; };
+		7623A20421C0E88D003B1715 /* PicShowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7623A20321C0E88D003B1715 /* PicShowController.m */; };
 		764B485B21BF67FD00E9F1A3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 764B485A21BF67FD00E9F1A3 /* AppDelegate.m */; };
 		764B485E21BF67FD00E9F1A3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 764B485D21BF67FD00E9F1A3 /* ViewController.m */; };
 		764B486121BF67FD00E9F1A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 764B485F21BF67FD00E9F1A3 /* Main.storyboard */; };
@@ -32,6 +37,13 @@
 		7620688521BFA5D000C35EEE /* FlyBehaviors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlyBehaviors.m; sourceTree = "<group>"; };
 		7620688721BFA5E400C35EEE /* QuackBehaviors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuackBehaviors.h; sourceTree = "<group>"; };
 		7620688821BFA5E400C35EEE /* QuackBehaviors.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuackBehaviors.m; sourceTree = "<group>"; };
+		7623A1F821C0B397003B1715 /* Beverages.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Beverages.h; sourceTree = "<group>"; };
+		7623A1F921C0B397003B1715 /* Beverages.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Beverages.m; sourceTree = "<group>"; };
+		7623A1FC21C0E643003B1715 /* 策略模式.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "策略模式.png"; sourceTree = "<group>"; };
+		7623A1FD21C0E643003B1715 /* 装饰者模式.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "装饰者模式.png"; sourceTree = "<group>"; };
+		7623A1FE21C0E643003B1715 /* 观察者模式.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "观察者模式.png"; sourceTree = "<group>"; };
+		7623A20221C0E88D003B1715 /* PicShowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PicShowController.h; sourceTree = "<group>"; };
+		7623A20321C0E88D003B1715 /* PicShowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PicShowController.m; sourceTree = "<group>"; };
 		764B485621BF67FD00E9F1A3 /* HeaderFirstDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeaderFirstDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		764B485921BF67FD00E9F1A3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		764B485A21BF67FD00E9F1A3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -81,6 +93,34 @@
 			path = Bhaviors;
 			sourceTree = "<group>";
 		};
+		7623A1F621C0B30D003B1715 /* Decorator */ = {
+			isa = PBXGroup;
+			children = (
+				7623A1F821C0B397003B1715 /* Beverages.h */,
+				7623A1F921C0B397003B1715 /* Beverages.m */,
+			);
+			path = Decorator;
+			sourceTree = "<group>";
+		};
+		7623A1F721C0B33C003B1715 /* StrategyPattern */ = {
+			isa = PBXGroup;
+			children = (
+				7620687921BF8FAB00C35EEE /* Bhaviors */,
+				7620687521BF8F8000C35EEE /* Ducks */,
+			);
+			path = StrategyPattern;
+			sourceTree = "<group>";
+		};
+		7623A1FB21C0E643003B1715 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				7623A1FC21C0E643003B1715 /* 策略模式.png */,
+				7623A1FD21C0E643003B1715 /* 装饰者模式.png */,
+				7623A1FE21C0E643003B1715 /* 观察者模式.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		764B484D21BF67FD00E9F1A3 = {
 			isa = PBXGroup;
 			children = (
@@ -100,14 +140,17 @@
 		764B485821BF67FD00E9F1A3 /* HeaderFirstDemo */ = {
 			isa = PBXGroup;
 			children = (
-				7620687921BF8FAB00C35EEE /* Bhaviors */,
-				7620687521BF8F8000C35EEE /* Ducks */,
+				7623A1FB21C0E643003B1715 /* images */,
+				7623A1F721C0B33C003B1715 /* StrategyPattern */,
+				7623A1F621C0B30D003B1715 /* Decorator */,
 				764B485921BF67FD00E9F1A3 /* AppDelegate.h */,
 				764B485A21BF67FD00E9F1A3 /* AppDelegate.m */,
 				764B486F21BF8D1000E9F1A3 /* MenuTableViewController.h */,
 				764B487021BF8D1000E9F1A3 /* MenuTableViewController.m */,
 				764B485C21BF67FD00E9F1A3 /* ViewController.h */,
 				764B485D21BF67FD00E9F1A3 /* ViewController.m */,
+				7623A20221C0E88D003B1715 /* PicShowController.h */,
+				7623A20321C0E88D003B1715 /* PicShowController.m */,
 				764B485F21BF67FD00E9F1A3 /* Main.storyboard */,
 				764B486221BF67FE00E9F1A3 /* Assets.xcassets */,
 				764B486421BF67FE00E9F1A3 /* LaunchScreen.storyboard */,
@@ -174,8 +217,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7623A20121C0E643003B1715 /* 观察者模式.png in Resources */,
 				764B486621BF67FE00E9F1A3 /* LaunchScreen.storyboard in Resources */,
 				764B486321BF67FE00E9F1A3 /* Assets.xcassets in Resources */,
+				7623A1FF21C0E643003B1715 /* 策略模式.png in Resources */,
+				7623A20021C0E643003B1715 /* 装饰者模式.png in Resources */,
 				764B486121BF67FD00E9F1A3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,8 +237,10 @@
 				7620688921BFA5E400C35EEE /* QuackBehaviors.m in Sources */,
 				764B487121BF8D1000E9F1A3 /* MenuTableViewController.m in Sources */,
 				764B485E21BF67FD00E9F1A3 /* ViewController.m in Sources */,
+				7623A20421C0E88D003B1715 /* PicShowController.m in Sources */,
 				7620688021BF926000C35EEE /* YellowDuck.m in Sources */,
 				7620687821BF8FA200C35EEE /* BaseDuck.m in Sources */,
+				7623A1FA21C0B397003B1715 /* Beverages.m in Sources */,
 				764B486921BF67FE00E9F1A3 /* main.m in Sources */,
 				764B485B21BF67FD00E9F1A3 /* AppDelegate.m in Sources */,
 				7620688621BFA5D000C35EEE /* FlyBehaviors.m in Sources */,

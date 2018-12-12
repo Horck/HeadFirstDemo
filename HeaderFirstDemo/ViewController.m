@@ -9,11 +9,14 @@
 #import "ViewController.h"
 #import "YellowDuck.h"
 #import "RedDuck.h"
+#import "Beverages.h"
+#import "PicShowController.h"
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *desLabel;
 
 @property(strong, nonatomic) YellowDuck *yellowDuck;
+@property (weak, nonatomic) IBOutlet UIImageView *img;
 
 @end
 
@@ -22,7 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.desLabel.text = self.desStr;
-    
+    self.img.image = [UIImage imageNamed:self.navigationItem.title];
     // 注册监听
     [self.yellowDuck addObserver:self forKeyPath:@"weight" options:NSKeyValueObservingOptionNew context:nil];
     // Do any additional setup after loading the view, typically from a nib.
@@ -35,6 +38,9 @@
     }else if ([title isEqualToString:@"观察者模式"])
     {
         [self jump2Action];
+    }else if ([title isEqualToString:@"装饰者模式"])
+    {
+        [self jump3Action];
     }
 }
 
@@ -53,6 +59,16 @@
 
 }
 
+
+- (IBAction)tapImg:(id)sender {
+    PicShowController *picShowVC = [[PicShowController alloc] init];
+    picShowVC.curImage = self.img.image;
+    [self presentViewController:picShowVC animated:NO completion:^{
+        
+    }];
+}
+
+
 #pragma mark - 观察者模式 这里用KVO实现一下
 - (void)jump2Action
 {
@@ -67,6 +83,27 @@
     }
 }
 
+#pragma mark -装饰者模式
+- (void)jump3Action
+{
+    // 开始计算不同种类不同配料开发价格
+    //1 浓咖啡+摩卡+奶
+    Beverage *es = [[Espresso alloc] init];
+    
+    es = [Mocha instanceWith:es];
+    
+    es = [Milk instanceWith:es];
+    
+    NSLog(@"价格是%@ =$%.2f",es,es.cost);
+    
+    
+    //2 低咖啡因 +奶
+    Beverage *de = [[Decaf alloc] init];
+    de = [Milk instanceWith:de];
+    NSLog(@"价格是%@ =$%.2f",de ,de.cost);
+    
+
+}
 
 - (YellowDuck *)yellowDuck
 {
