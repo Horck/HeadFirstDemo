@@ -26,6 +26,8 @@
 		764B486621BF67FE00E9F1A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 764B486421BF67FE00E9F1A3 /* LaunchScreen.storyboard */; };
 		764B486921BF67FE00E9F1A3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 764B486821BF67FE00E9F1A3 /* main.m */; };
 		764B487121BF8D1000E9F1A3 /* MenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 764B487021BF8D1000E9F1A3 /* MenuTableViewController.m */; };
+		76B9BEF221C1FEC700D6CEA6 /* 单件模式.png in Resources */ = {isa = PBXBuildFile; fileRef = 76B9BEF121C1FEC700D6CEA6 /* 单件模式.png */; };
+		76B9BEF621C1FF5B00D6CEA6 /* SingleInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 76B9BEF521C1FF5B00D6CEA6 /* SingleInstance.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +63,9 @@
 		764B486821BF67FE00E9F1A3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		764B486F21BF8D1000E9F1A3 /* MenuTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuTableViewController.h; sourceTree = "<group>"; };
 		764B487021BF8D1000E9F1A3 /* MenuTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuTableViewController.m; sourceTree = "<group>"; };
+		76B9BEF121C1FEC700D6CEA6 /* 单件模式.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "单件模式.png"; sourceTree = "<group>"; };
+		76B9BEF421C1FF5B00D6CEA6 /* SingleInstance.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleInstance.h; sourceTree = "<group>"; };
+		76B9BEF521C1FF5B00D6CEA6 /* SingleInstance.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleInstance.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +124,7 @@
 		7623A1FB21C0E643003B1715 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				76B9BEF121C1FEC700D6CEA6 /* 单件模式.png */,
 				7623A20521C10160003B1715 /* 工厂模式.png */,
 				7623A1FC21C0E643003B1715 /* 策略模式.png */,
 				7623A1FD21C0E643003B1715 /* 装饰者模式.png */,
@@ -155,8 +161,8 @@
 		764B485821BF67FD00E9F1A3 /* HeaderFirstDemo */ = {
 			isa = PBXGroup;
 			children = (
+				76B9BEF321C1FF3400D6CEA6 /* Single */,
 				7623A20721C1046D003B1715 /* Factory */,
-				7623A1FB21C0E643003B1715 /* images */,
 				7623A1F721C0B33C003B1715 /* StrategyPattern */,
 				7623A1F621C0B30D003B1715 /* Decorator */,
 				764B485921BF67FD00E9F1A3 /* AppDelegate.h */,
@@ -172,8 +178,18 @@
 				764B486421BF67FE00E9F1A3 /* LaunchScreen.storyboard */,
 				764B486721BF67FE00E9F1A3 /* Info.plist */,
 				764B486821BF67FE00E9F1A3 /* main.m */,
+				7623A1FB21C0E643003B1715 /* images */,
 			);
 			path = HeaderFirstDemo;
+			sourceTree = "<group>";
+		};
+		76B9BEF321C1FF3400D6CEA6 /* Single */ = {
+			isa = PBXGroup;
+			children = (
+				76B9BEF421C1FF5B00D6CEA6 /* SingleInstance.h */,
+				76B9BEF521C1FF5B00D6CEA6 /* SingleInstance.m */,
+			);
+			path = Single;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +255,7 @@
 				764B486321BF67FE00E9F1A3 /* Assets.xcassets in Resources */,
 				7623A1FF21C0E643003B1715 /* 策略模式.png in Resources */,
 				7623A20021C0E643003B1715 /* 装饰者模式.png in Resources */,
+				76B9BEF221C1FEC700D6CEA6 /* 单件模式.png in Resources */,
 				764B486121BF67FD00E9F1A3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7620688321BF952A00C35EEE /* RedDuck.m in Sources */,
+				76B9BEF621C1FF5B00D6CEA6 /* SingleInstance.m in Sources */,
 				7620688921BFA5E400C35EEE /* QuackBehaviors.m in Sources */,
 				7623A20A21C104A1003B1715 /* DuckCreater.m in Sources */,
 				764B487121BF8D1000E9F1A3 /* MenuTableViewController.m in Sources */,

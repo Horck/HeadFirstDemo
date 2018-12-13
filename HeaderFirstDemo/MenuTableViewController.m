@@ -47,6 +47,10 @@
     {
         desStr = @"定义了一个创建对象的接口，单由于子类绝顶要实例化的类是哪一个。工厂方法让类把实例化推迟到子类";
         titleStr = @"工厂模式";
+    }else if ([identifierSting isEqualToString:@"jump5"])
+    {
+        desStr = @"确保一个类只有一个实例，并提供一个全局访问点";
+        titleStr = @"单件模式";
     }
     toVC.desStr = desStr;
     toVC.navigationItem.title = titleStr;

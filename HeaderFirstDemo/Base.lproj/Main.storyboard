@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="eTQ-TM-LhQ">
-                            <rect key="frame" x="0.0" y="248" width="375" height="7"/>
+                            <rect key="frame" x="0.0" y="310" width="375" height="7"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
@@ -108,7 +108,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="61.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="工厂模式(FactoryPattern))" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Etd-ew-uV2">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="工厂模式(Factory Pattern))" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Etd-ew-uV2">
                                                     <rect key="frame" x="16" y="12" width="309" height="37.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -124,6 +124,31 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="nkl-7x-ERg" kind="push" identifier="jump4" id="Sek-ef-MCt"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="62" id="v4Z-W3-35E">
+                                        <rect key="frame" x="0.0" y="248" width="375" height="62"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="v4Z-W3-35E" id="722-bu-Wjn">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="61.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="单件模式(Single Pattern))" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lY7-4O-toh">
+                                                    <rect key="frame" x="16" y="12" width="309" height="37.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="lY7-4O-toh" secondAttribute="trailing" constant="16" id="228-ny-10S"/>
+                                                <constraint firstItem="lY7-4O-toh" firstAttribute="leading" secondItem="722-bu-Wjn" secondAttribute="leading" constant="16" id="Jsw-R9-Sql"/>
+                                                <constraint firstAttribute="bottom" secondItem="lY7-4O-toh" secondAttribute="bottom" constant="12" id="TIt-WB-olk"/>
+                                                <constraint firstItem="lY7-4O-toh" firstAttribute="top" secondItem="722-bu-Wjn" secondAttribute="top" constant="12" id="jvb-j2-mEv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="nkl-7x-ERg" kind="push" identifier="jump5" id="q1k-yr-mwS"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -230,6 +255,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Sek-ef-MCt"/>
+        <segue reference="q1k-yr-mwS"/>
     </inferredMetricsTieBreakers>
 </document>

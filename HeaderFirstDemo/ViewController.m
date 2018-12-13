@@ -12,6 +12,7 @@
 #import "DuckCreater.h"
 #import "Beverages.h"
 #import "PicShowController.h"
+#import "SingleInstance.h"
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *desLabel;
@@ -45,6 +46,9 @@
     }else if ([title isEqualToString:@"工厂模式"])
     {
         [self jump4Action];
+    }else if ([title isEqualToString:@"单件模式"])
+    {
+        [self jump5Action];
     }
 }
 
@@ -110,7 +114,7 @@
 }
 
 
-#pragma mark -共产模式
+#pragma mark -工厂模式
 -(void)jump4Action{
     DuckCreater *creater = [[DuckCreater alloc] init];
     
@@ -125,4 +129,15 @@
     }
     return _yellowDuck;
 }
+
+#pragma mark 单件模式
+- (void)jump5Action
+{
+    SingleInstance *ins1= [SingleInstance shareInstance];
+    
+    SingleInstance *ins2 = [[SingleInstance alloc] init];
+    
+    NSLog(@"第一个对象地址 ins1---->%@  第二个对象地址 ins2----> %@", ins1,ins2);
+}
+
 @end
